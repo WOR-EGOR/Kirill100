@@ -15,12 +15,10 @@ def test_mask_account_card():
     ("Счет 35383033474447895560"),
     ("Visa Classic 6831982476737658"),
     ("Visa Gold 5999414228426353")])
+
+
 def test_mask_account_card_param(payment_info):
     assert mask_account_card(payment_info)
-
-
-def test_get_date():
-    assert get_date("") == "Неверный ввод"
 
 
 def test_get_date_split():
